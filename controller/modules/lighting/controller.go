@@ -2,12 +2,13 @@ package lighting
 
 import (
 	"fmt"
-	"github.com/reef-pi/reef-pi/controller"
-	"github.com/reef-pi/reef-pi/controller/connectors"
-	"github.com/reef-pi/reef-pi/controller/storage"
 	"log"
 	"sync"
 	"time"
+
+	"github.com/reef-pi/reef-pi/controller"
+	"github.com/reef-pi/reef-pi/controller/connectors"
+	"github.com/reef-pi/reef-pi/controller/storage"
 )
 
 const Bucket = storage.LightingBucket

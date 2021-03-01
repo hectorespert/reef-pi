@@ -2,11 +2,12 @@ package equipment
 
 import (
 	"fmt"
+	"log"
+
 	"github.com/reef-pi/reef-pi/controller"
 	"github.com/reef-pi/reef-pi/controller/connectors"
 	"github.com/reef-pi/reef-pi/controller/storage"
 	"github.com/reef-pi/reef-pi/controller/telemetry"
-	"log"
 )
 
 type Controller struct {

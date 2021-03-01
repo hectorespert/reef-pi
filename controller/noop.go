@@ -5,6 +5,7 @@ import (
 	"sync"
 
 	"github.com/gorilla/mux"
+
 	"github.com/reef-pi/reef-pi/controller/device_manager"
 	"github.com/reef-pi/reef-pi/controller/settings"
 	"github.com/reef-pi/reef-pi/controller/storage"
