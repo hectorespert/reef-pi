@@ -2,7 +2,8 @@ package drivers
 
 import (
 	"fmt"
-	"log"
+    "github.com/reef-pi/reef-pi/controller/drivers/tasmota"
+    "log"
 
 	"github.com/reef-pi/drivers/ads1x15"
 	"github.com/reef-pi/drivers/dli"
@@ -35,6 +36,7 @@ var driversMap = map[string]hal.DriverFactory{
 	"sht31d":       sht3x.Factory(),
 	"ads1015":      ads1x15.Ads1015Factory(),
 	"ads1115":      ads1x15.Ads1115Factory(),
+	"tasmota-pwm":  tasmota.PwmDriverFactory(),
 }
 
 func AbstractFactory(t string) (hal.DriverFactory, error) {
