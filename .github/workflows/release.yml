@@ -2,7 +2,7 @@ name: release
 on:
   push:
     tags:
-      - "hectorespert-*"
+      - "v*"
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -35,9 +35,6 @@ jobs:
         run: bundle install
       - name: deb
         run: make deb
-
-      - name: Rename
-        run: ls
 
       - uses: marvinpinto/action-automatic-releases@latest
         with:
