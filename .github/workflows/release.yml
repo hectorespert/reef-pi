@@ -2,9 +2,9 @@ name: release
 on:
   push:
     tags:
-      - "v*"
+      - "hectorespert-*"
 jobs:
-  builds:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
