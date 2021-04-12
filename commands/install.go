@@ -1,22 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"github.com/reef-pi/reef-pi/controller/utils"
-	"io"
-	"log"
-	"net/http"
-	"os"
-	"path"
-	"path/filepath"
-	"strings"
-	"time"
+    "fmt"
+    "github.com/reef-pi/reef-pi/controller/utils"
+    "io"
+    "log"
+    "net/http"
+    "os"
+    "path"
+    "path/filepath"
+    "time"
 )
 
-const urlTemplate = "https://github.com/hectorespert/reef-pi/releases/download/%s/reef-pi-%s-pi%s.deb"
+const urlTemplate = "https://github.com/hectorespert/reef-pi/releases/download/%s/reef-pi-%s.deb"
 
-func downloadDeb(pi, version string) (string, error) {
-	url := fmt.Sprintf(urlTemplate, version, version, pi)
+func downloadDeb(version string) (string, error) {
+	url := fmt.Sprintf(urlTemplate, version, version)
 	log.Println("Downloading reef-pi from:", url)
 	resp, err := http.Get(url)
 	if err != nil {
@@ -47,17 +46,7 @@ func install(version string) error { // version to upgrade to
 	}
 	time.Sleep(time.Second)
 
-	out, err := utils.Command("/bin/uname", "-m").CombinedOutput()
-	if err != nil {
-		log.Println("Failed to detect pi version:", err)
-		return err
-	}
-	pi := "3"
-	if strings.Contains(string(out), "armv6") {
-		pi = "0"
-	}
-
-	file, err := downloadDeb(pi, version)
+	file, err := downloadDeb(version)
 	if err != nil {
 		log.Println("Failed to download reef-pi")
 		return err
