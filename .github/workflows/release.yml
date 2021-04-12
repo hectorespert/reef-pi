@@ -36,6 +36,9 @@ jobs:
       - name: deb
         run: make deb
 
+      - name: Rename
+        run: ls
+
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
