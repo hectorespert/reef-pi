@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: npm install && npm run build && go get && go build ./... && go test ./...
+      && make && bundle install
+    command: go run
