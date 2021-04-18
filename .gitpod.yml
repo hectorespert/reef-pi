@@ -1,7 +1,9 @@
 image:
   file: .gitpod.Dockerfile
 
+ports:
+  - port: 8080
+
 tasks:
-  - init: npm install && npm run build && go get && go build ./... && go test ./...
-      && make && bundle install
-    command: go run
+  - init: make install && make
+    command: make start-dev

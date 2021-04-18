@@ -24,7 +24,7 @@ require (
 	go.etcd.io/bbolt v1.3.5
 	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/net v0.0.0-20210330230544-e57232859fb2 // indirect
-	golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57 // indirect
+	golang.org/x/sys v0.0.0-20210415045647-66c3f260301c // indirect
 	golang.org/x/tools v0.1.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 )
