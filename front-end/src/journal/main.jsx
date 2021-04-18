@@ -1,6 +1,6 @@
 import React from 'react'
 import New from './new'
-import JournalForm from './form'
+import Journal from './journal'
 import CollapsibleList from '../ui_components/collapsible_list'
 import Collapsible from '../ui_components/collapsible'
 import { fetchJournals, deleteJournal, updateJournal } from 'redux/actions/journal'
@@ -56,7 +56,7 @@ class main extends React.Component {
             title={<b className='ml-2 align-middle'>{j.name} </b>}
             onDelete={this.handleDelete}
           >
-            <JournalForm
+            <Journal
               data={j}
               onSubmit={this.handleSubmit}
             />
