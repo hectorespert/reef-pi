@@ -42,6 +42,7 @@ class Journal extends React.Component {
 }
 
 Journal.propTypes = {
+  readOnly: PropTypes.bool,
   onSubmit: PropTypes.func.isRequired
 }
 
