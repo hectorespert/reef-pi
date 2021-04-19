@@ -3,6 +3,7 @@ import JournalForm from './form'
 import PropTypes from 'prop-types'
 import { fetchJournalUsage } from '../redux/actions/journal'
 import { connect } from 'react-redux'
+import RecordJournalForm from './record_form'
 
 class Journal extends React.Component {
   constructor (props) {
@@ -20,16 +21,16 @@ class Journal extends React.Component {
 
   render () {
     if (this.props.readOnly) {
-      if (this.props.journal_usage.data) { // TODO: Show last values
-        return (
-          <div>
-            {this.props.journal_usage.data.current.map(function (d, idx) {
-              return (<p key={idx}>{d.value}</p>)
-            })}
+      return (
+        <div className='container'>
+          <div className='col col-sm-6 col-md-3'>
+            <RecordJournalForm />
           </div>
-        )
-      }
-      return null
+          <div className='col col-sm-6 col-md-3'>
+            <p>Records</p>
+          </div>
+        </div>
+      )
     } else {
       return (
         <JournalForm
