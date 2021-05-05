@@ -4,6 +4,7 @@ import { ErrorFor, ShowError } from '../utils/validation_helper'
 import { showError } from 'utils/alert'
 import classNames from 'classnames'
 import i18next from 'i18next'
+import { SortByName } from 'utils/sort_by_name'
 
 const EditEquipment = ({
   values,
@@ -31,13 +32,13 @@ const EditEquipment = ({
   const deleteAction = () => {
     if (values.id) {
       return (
-        <div className='col-12 col-sm-2 col-lg-3 order-sm-4 order-lg-last'>
+        <div className='col-12 col-sm-2 col-md-1'>
           <button
             type='button'
             onClick={onDelete}
             className='btn btn-sm btn-outline-danger float-right d-block d-sm-inline ml-2'
           >
-            Delete
+            {i18next.t('delete')}
           </button>
         </div>
       )
@@ -47,12 +48,12 @@ const EditEquipment = ({
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className='row align-items-start'>
-        {deleteAction()}
-        <div className='col-12 col-sm-5 col-lg-5 order-sm-1'>
+      <div className='row'>
+        <div className='col-12 col-sm-4 col-md-3'>
           <label className='mr-2'>{i18next.t('name')}</label>
           <input
-            type='text' name='name'
+            type='text'
+            name='name'
             onChange={handleChange}
             onBlur={handleBlur}
             className={classNames('form-control', { 'is-invalid': ShowError('name', touched, errors) })}
@@ -60,8 +61,8 @@ const EditEquipment = ({
           />
           <ErrorFor errors={errors} touched={touched} name='name' />
         </div>
-        <div className='col-12 col-sm-5 col-lg-4 order-sm-2'>
-          <label className='mr-2'>Outlet</label>
+        <div className='col-12 col-sm-4 col-md-3'>
+          <label className='mr-2'>{i18next.t('outlet')}</label>
           <select
             name='outlet'
             onChange={handleChange}
@@ -70,24 +71,37 @@ const EditEquipment = ({
             value={values.outlet}
           >
             <option value='' className='d-none'>-- Select --</option>
-            {outlets.map((item) => {
-              return (
-                <option
-                  key={item.id}
-                  value={item.id}
-                >
-                  {item.name}
-                </option>
-              )
-            })}
+            {outlets.sort((a, b) => SortByName(a, b))
+              .map((item) => {
+                return (
+                  <option
+                    key={item.id}
+                    value={item.id}
+                  >
+                    {item.name}
+                  </option>
+                )
+              })}
           </select>
           <ErrorFor errors={errors} touched={touched} name='outlet' />
         </div>
-      </div>
-      <div className='row'>
-        <div className='col-12'>
+        <div className='col-12 col-sm-3 col-md-2'>
+          <label className='mr-2'>{i18next.t('stayoffonboot')}</label>
+          <input
+            type='checkbox'
+            name='stay_off_on_boot'
+            checked={values.stay_off_on_boot}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            className={classNames('form-control', { 'is-invalid': ShowError('stay_off_on_boot', touched, errors) })}
+            value={values.stay_off_on_boot}
+          />
+          <ErrorFor errors={errors} touched={touched} name='stay_off_on_boot' />
+        </div>
+        <div className='col-12 col-md-1 col-sm-2'>
           <input type='submit' value={actionLabel} className='btn btn-sm btn-primary float-right mt-1' />
         </div>
+        {deleteAction()}
       </div>
     </form>
   )
