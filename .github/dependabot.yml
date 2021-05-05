@@ -2,9 +2,7 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/"
-  schedule:
-    interval: monthly
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 1
   ignore:
   - dependency-name: css-loader
     versions:
@@ -32,6 +30,4 @@ updates:
     - 26.6.3
 - package-ecosystem: gomod
   directory: "/"
-  schedule:
-    interval: monthly
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 1
