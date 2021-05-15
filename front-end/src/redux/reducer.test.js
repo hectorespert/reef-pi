@@ -127,6 +127,8 @@ describe('Redux Reducer', () => {
     expect(result).toEqual(getState())
     result = rootReducer(getState(), { type: 'TELEMETRY_TEST_MESSAGE_SENT' })
     expect(result).toEqual(getState())
+    result = rootReducer(getState(), { type: 'JOURNALS_LOADED', payload: getPayload() })
+    expect(result).toEqual({ ...getState(), journals: getPayload() })
     result = rootReducer(getState(), { type: 'foo' })
     expect(result).toEqual(getState())
     expect(console.log.mock.calls.length).toBe(1)
