@@ -20,10 +20,6 @@ jobs:
           key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node_modules-
-      - name: pato
-        run: make pato
-      - name: which
-        run: which npm
       - name: Install
         run: npm i
       - name: go
