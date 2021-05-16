@@ -69,6 +69,10 @@ build: clean go-get test bin
 ui:
 	npm run ui
 
+
+pato:
+	which npm
+
 .PHONY: ui-dev
 ui-dev:
 	npm run ui-dev
