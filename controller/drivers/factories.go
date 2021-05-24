@@ -36,6 +36,7 @@ var driversMap = map[string]hal.DriverFactory{
 	"sht31d":       sht3x.Factory(),
 	"ads1015":      ads1x15.Ads1015Factory(),
 	"ads1115":      ads1x15.Ads1115Factory(),
+    "tasmota-out":  tasmota.OutputDriverFactory(),
 	"tasmota-pwm":  tasmota.PwmDriverFactory(),
 }
 
