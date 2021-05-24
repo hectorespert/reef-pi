@@ -25,7 +25,7 @@ func (m *pwmDriver) Metadata() hal.Metadata {
 }
 
 func (m *pwmDriver) Name() string {
-	return "Pepe"
+	return "Pwm"
 }
 
 func (m *pwmDriver) Number() int {
