@@ -12,7 +12,7 @@ import (
     "time"
 )
 
-const urlTemplate = "https://github.com/hectorespert/reef-pi/releases/download/%s-hectorespert/reef-pi-%s-hectorespert.deb"
+const urlTemplate = "https://github.com/hectorespert/planted-pi/releases/download/%s-planted-pi/reef-pi-%s-planted-pi.deb"
 
 func downloadDeb(version string) (string, error) {
 	url := fmt.Sprintf(urlTemplate, version, version)
