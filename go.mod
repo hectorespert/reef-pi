@@ -19,7 +19,7 @@ require (
 	github.com/reef-pi/hal v0.0.0-20210110194416-096527efd4a0
 	github.com/reef-pi/rpi v0.0.0-20210110201913-52ed585757e0
 	github.com/robfig/cron/v3 v3.0.1
-	github.com/shirou/gopsutil v3.21.5+incompatible
+	github.com/shirou/gopsutil v3.21.6+incompatible
 	go.etcd.io/bbolt v1.3.6
 	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
