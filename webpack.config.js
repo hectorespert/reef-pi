@@ -25,7 +25,7 @@ var config = {
         test: /\.jsx?/,
         include: APP_DIR,
         loader: 'babel-loader',
-        query: {
+        options: {
           presets: [['@babel/preset-env', { modules: false }], '@babel/preset-react']
         }
       },
@@ -62,8 +62,17 @@ var config = {
       },
       {
         test: /\.css/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader'
+          }
+        ]
+      }/*,
+      {
+        test: /\.css/,
         loaders: ['style-loader', 'css-loader']
-      }
+      }*/
     ]
   },
   output: {
