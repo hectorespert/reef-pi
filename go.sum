@@ -65,6 +65,7 @@ github.com/gorilla/sessions v1.2.1/go.mod h1:dk2InVEVJ0sfLlnXv9EAgkf6ecYs/i80K/z
 github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc=
 github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/hajimehoshi/go-mp3 v0.3.1/go.mod h1:qMJj/CSDxx6CGHiZeCgbiq2DSUkbK0UbtXShQcnfyMM=
+github.com/hajimehoshi/go-mp3 v0.3.2/go.mod h1:qMJj/CSDxx6CGHiZeCgbiq2DSUkbK0UbtXShQcnfyMM=
 github.com/hajimehoshi/oto v0.6.1/go.mod h1:0QXGEkbuJRohbJaxr7ZQSxnju7hEhseiPx2hrh6raOI=
 github.com/jpillora/backoff v1.0.0/go.mod h1:J/6gKK9jxlEcS3zixgDgUAsiuZ7yrSoa/FX5e0EB2j4=
 github.com/json-iterator/go v1.1.6/go.mod h1:+SdeFBvtyEkXs7REEP0seUULqWtbJapLOCVDaaPEHmU=
@@ -117,6 +118,8 @@ github.com/reef-pi/adafruitio v0.0.0-20171007064130-a3cae37cdd64 h1:pv5kOD9OkP5v
 github.com/reef-pi/adafruitio v0.0.0-20171007064130-a3cae37cdd64/go.mod h1:UBHNdzbwzKriDbmPAr34k4hdd+x/VYKO6xJ4ebDztEo=
 github.com/reef-pi/drivers v0.0.0-20210110203223-b6fe7eebbe43 h1:52BTSjDAbfsvSz+ucamyZV6VaqhJnoKJd+seU0fkWTo=
 github.com/reef-pi/drivers v0.0.0-20210110203223-b6fe7eebbe43/go.mod h1:Y0BJGVFAYAhuPCEQnm1k53eK5zfboSJNvEWGf4t4ge8=
+github.com/reef-pi/drivers v0.0.0-20210710190157-d86c542ec3ed h1:Mbb81QiUK6kFfEYkbDyL34ntbKJgLQ+oZQs3o9AX6JM=
+github.com/reef-pi/drivers v0.0.0-20210710190157-d86c542ec3ed/go.mod h1:ATtaal71RcObVwPFZk7NoVHU0qfxE3wTbYnutTCPzR0=
 github.com/reef-pi/embd v0.0.0-20200823212911-23a8c07341dd h1:7C2RnXExMPkAgq+OhGTivaTz0icwlo/3T+eJ8rGt0CM=
 github.com/reef-pi/embd v0.0.0-20200823212911-23a8c07341dd/go.mod h1:vLR1mLVXpivVlbXyVJ4CdsUpOoyDWas+xjikOIzVV0g=
 github.com/reef-pi/hal v0.0.0-20210110092437-fc2d84fd0cbf/go.mod h1:ymcJ0AbYfWXT1vyAbXOjKtWaFdCv1HHYmXDMWxJSWSM=
@@ -125,6 +128,8 @@ github.com/reef-pi/hal v0.0.0-20210110194416-096527efd4a0/go.mod h1:ymcJ0AbYfWXT
 github.com/reef-pi/rpi v0.0.0-20210110190550-4a62beb1f4c9/go.mod h1:oEr6GwCDxbTkZ1smChnN2r2ggB+y7A4AuFkiuDxiKiQ=
 github.com/reef-pi/rpi v0.0.0-20210110201913-52ed585757e0 h1:+f6dzYhZCUTna1qGQq3CEbVosZsIff7Q6bO3e2mbewM=
 github.com/reef-pi/rpi v0.0.0-20210110201913-52ed585757e0/go.mod h1:0ImA3B1k35IPcvsCgy5P7mLmtMqsqAp51suORfbE6qY=
+github.com/reef-pi/rpi v0.0.0-20210710185807-7b552751ba13 h1:LIIG0DRmMolRxBwI/QWzXvxwAXnjmDcLDvV4Qelv3NI=
+github.com/reef-pi/rpi v0.0.0-20210710185807-7b552751ba13/go.mod h1:0ImA3B1k35IPcvsCgy5P7mLmtMqsqAp51suORfbE6qY=
 github.com/robfig/cron/v3 v3.0.1 h1:WdRxkvbJztn8LMz/QEvLN5sBU+xKpSqwwUO1Pjr4qDs=
 github.com/robfig/cron/v3 v3.0.1/go.mod h1:eQICP3HwyT7UooqI/z+Ov+PtYAWygg1TEWWzGIFLtro=
 github.com/shirou/gopsutil v3.21.6+incompatible h1:mmZtAlWSd8U2HeRTjswbnDLPxqsEoK01NK+GZ1P+nEM=
