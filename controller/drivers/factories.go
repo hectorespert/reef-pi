@@ -1,22 +1,22 @@
 package drivers
 
 import (
-	"fmt"
-    "github.com/reef-pi/reef-pi/controller/drivers/tasmota"
+    "fmt"
     "log"
 
-	"github.com/reef-pi/drivers/ads1x15"
-	"github.com/reef-pi/drivers/dli"
-	"github.com/reef-pi/drivers/ezo"
-	"github.com/reef-pi/drivers/file"
-	"github.com/reef-pi/drivers/pca9685"
-	"github.com/reef-pi/drivers/ph_board"
-	"github.com/reef-pi/drivers/pico_board"
-	"github.com/reef-pi/drivers/shelly"
-	"github.com/reef-pi/drivers/sht3x"
-	"github.com/reef-pi/drivers/tplink"
-	"github.com/reef-pi/hal"
-	rpihal "github.com/reef-pi/rpi/hal"
+    "github.com/reef-pi/drivers/ads1x15"
+    "github.com/reef-pi/drivers/dli"
+    "github.com/reef-pi/drivers/ezo"
+    "github.com/reef-pi/drivers/file"
+    "github.com/reef-pi/drivers/pca9685"
+    "github.com/reef-pi/drivers/ph_board"
+    "github.com/reef-pi/drivers/pico_board"
+    "github.com/reef-pi/drivers/shelly"
+    "github.com/reef-pi/drivers/sht3x"
+    "github.com/reef-pi/drivers/tasmota"
+    "github.com/reef-pi/drivers/tplink"
+    "github.com/reef-pi/hal"
+    rpihal "github.com/reef-pi/rpi/hal"
 )
 
 var driversMap = map[string]hal.DriverFactory{

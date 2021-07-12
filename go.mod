@@ -15,9 +15,9 @@ require (
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/prometheus/client_golang v1.11.0
 	github.com/reef-pi/adafruitio v0.0.0-20171007064130-a3cae37cdd64
-	github.com/reef-pi/drivers v0.0.0-20210110203223-b6fe7eebbe43
+	github.com/reef-pi/drivers v0.0.0-20210710190157-d86c542ec3ed
 	github.com/reef-pi/hal v0.0.0-20210110194416-096527efd4a0
-	github.com/reef-pi/rpi v0.0.0-20210110201913-52ed585757e0
+	github.com/reef-pi/rpi v0.0.0-20210710185807-7b552751ba13
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/shirou/gopsutil v3.21.6+incompatible
 	go.etcd.io/bbolt v1.3.6
